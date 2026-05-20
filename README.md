@@ -348,7 +348,7 @@ AWS_S3_BUCKET=notary-bucket
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/pholguinc/nestjs-drizzle-aws-init.git
 cd nestjs-drizzle-aws-init
 ```
 
