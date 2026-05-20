@@ -1,0 +1,25 @@
+services:
+  # ============================================================================
+  # Application Service (NestJS Production Build)
+  # ============================================================================
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nestjs-drizzle-aws-init-prod
+    restart: always
+    env_file:
+      - .env.prod
+    environment:
+      NODE_ENV: production
+    ports:
+      - "3000:3000"
+    networks:
+      - floci_default
+
+# ==============================================================================
+# Network Definition connecting to the active Floci/LocalStack network
+# ==============================================================================
+networks:
+  floci_default:
+    external: true
