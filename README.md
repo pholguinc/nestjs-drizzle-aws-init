@@ -284,7 +284,7 @@ nestjs-drizzle-aws-init/
 ### Referencia rápida por entorno
 
 <details>
-<summary><strong>🟢 Desarrollo Local (.env)</strong></summary>
+<summary><strong>Desarrollo Local (.env)</strong></summary>
 
 ```env
 # Database
@@ -304,7 +304,7 @@ REDIS_PASSWORD=redis_secure_password_456
 </details>
 
 <details>
-<summary><strong>🟣 Producción Local con Floci (.env.prod)</strong></summary>
+<summary><strong>Producción Local con Floci (.env.prod)</strong></summary>
 
 ```env
 NODE_ENV=production
